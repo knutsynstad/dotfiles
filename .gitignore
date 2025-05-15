@@ -1,0 +1,5 @@
+# Don't track compiled cache or secrets
+.cache/
+.local/
+*.swp
+*.bak
