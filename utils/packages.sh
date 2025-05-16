@@ -30,10 +30,14 @@ echo "Installing packages ..."
 sudo pacman -S --noconfirm --needed zsh unzip
 
 # Install Oh My Zsh
-export RUNZSH=no       # Don't start Zsh after install
-export CHSH=no         # Don't change the shell (yet)
-export KEEP_ZSHRC=yes  # Don't overwrite .zshrc
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+  export RUNZSH=no       # Don't start Zsh after install
+  export CHSH=no         # Don't change the shell (yet)
+  export KEEP_ZSHRC=yes  # Don't overwrite .zshrc
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+else
+  echo "Oh My Zsh already installed. Skipping..."
+fi
 
 
 #  █▄ █ █▀▀ ▀█▀ █ █ █ █▀█ █▀█ █▄▀ █ █▄ █ █▀▀
@@ -100,8 +104,12 @@ yay -S --noconfirm --needed \
 1password spotify
 
 
-# Change default shell to zsh
-echo "Setting Zsh as the default shell"
-chsh -s /bin/zsh
+# Change default shell to Zsh if not already set
+if [ "$SHELL" != "/bin/zsh" ]; then
+  echo "Setting Zsh as the default shell..."
+  chsh -s /bin/zsh
+else
+  echo "Zsh is already the default shell."
+fi
 
 echo "Done installing packages!"
