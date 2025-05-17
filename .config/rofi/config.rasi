@@ -6,6 +6,8 @@ configuration {
   prompt: "Search";
   display-drun: "";
   drun-display-format: "{name}";
+  hover-select: true;
+  cycle: false;
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
@@ -29,9 +31,7 @@ configuration {
 /*	sort: false;*/
 /*	sorting-method: "normal";*/
 /*	case-sensitive: false;*/
-/*	cycle: true;*/
 /*	sidebar-mode: false;*/
-/*	hover-select: false;*/
 /*	eh: 1;*/
 /*	auto-select: false;*/
 /*	parse-hosts: false;*/
