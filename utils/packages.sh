@@ -59,7 +59,7 @@ lib32-vulkan-icd-loader vulkan-tools
 #  ▀▄▀▄▀ █▀█  █  █▄▄ █▀█ █ ▀█ █▄▀  ▄▀    █▀█  █  █▀▀ █▀▄ █▄▄ █▀█ █ ▀█ █▄▀
 
 sudo pacman -S --noconfirm --needed \
-hyprland hyprpaper wl-clipboard grim slurp mako waybar wofi \
+hyprland hyprpaper wl-clipboard grim slurp mako waybar rofi-wayland \
 xdg-desktop-portal-hyprland qt5-wayland qt6-wayland qt5ct qt6ct \
 polkit-kde-agent kvantum xdg-utils xorg-xwayland
 

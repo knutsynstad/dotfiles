@@ -26,6 +26,15 @@ ln -sf ~/dotfiles/.config/hypr/hyprland.conf ~/.config/hypr/hyprland.conf
 ln -sf ~/dotfiles/.config/hypr/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
 
 
+
+#  █▀█ █▀█ █▀▀ █ ▄▄ █ █ █ ▄▀█ █▄█ █   ▄▀█ █▄ █ █▀▄
+#  █▀▄ █▄█ █▀  █    ▀▄▀▄▀ █▀█  █  █▄▄ █▀█ █ ▀█ █▄▀
+
+mkdir -p ~/.config/rofi
+ln -sf ~/dotfiles/.config/rofi/config.rasi ~/.config/rofi/config.rasi
+ln -sf ~/dotfiles/.config/rofi/theme.rasi ~/.config/rofi/theme.rasi
+
+
 #  █▄▀ █ ▀█▀ ▀█▀ █▄█
 #  █ █ █  █   █   █ 
 
