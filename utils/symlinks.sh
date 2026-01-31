@@ -49,6 +49,24 @@ mkdir -p ~/.config/waybar
 ln -sf ~/dotfiles/.config/waybar/config.jsonc ~/.config/waybar/config.jsonc
 ln -sf ~/dotfiles/.config/waybar/style.css ~/.config/waybar/style.css
 
+mkdir -p ~/.config/waybar/scripts
+ln -sf ~/dotfiles/.config/waybar/scripts/spotify-metadata.sh ~/.config/waybar/scripts/spotify-metadata.sh
+ln -sf ~/dotfiles/.config/waybar/scripts/spotify-launch.sh ~/.config/waybar/scripts/spotify-launch.sh
+
+
+# various apps
+mkdir -p ~/.local
+mkdir -p ~/.local/share
+mkdir -p ~/.local/share/applications
+ln -sf ~/dotfiles/.local/share/applications/steam.desktop ~/.local/share/applications/steam.desktop
+ln -sf ~/dotfiles/.local/share/applications/discord.desktop ~/.local/share/applications/discord.desktop
+ln -sf ~/dotfiles/.local/share/applications/1password.desktop ~/.local/share/applications/1password.desktop
+ln -sf ~/dotfiles/.local/share/applications/firefox.desktop ~/.local/share/applications/firefox.desktop
+ln -sf ~/dotfiles/.local/share/applications/gimp.desktop ~/.local/share/applications/gimp.desktop
+ln -sf ~/dotfiles/.local/share/applications/scribus.desktop ~/.local/share/applications/scribus.desktop
+ln -sf ~/dotfiles/.local/share/applications/spotify.desktop ~/.local/share/applications/spotify.desktop
+
+
 
 #  █▀ █ █ █▀▀ █   █
 #  ▄█ █▀█ ██▄ █▄▄ █▄▄

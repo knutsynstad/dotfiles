@@ -12,13 +12,14 @@
         "hyprland/workspaces"
     ],
     "modules-center": [
-        "clock"
+        "custom/spotify"
     ],
     "modules-right": [
         "pulseaudio",
         "cpu",
         "temperature",
-        "network"
+        "network",
+	"clock"
     ],
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -26,6 +27,13 @@
         "warp-on-scroll": false,
         "format": "{name}",
         "on-click": "activate"
+    },
+    "custom/spotify": {
+    	"format": "{}",
+    	"exec": "~/.config/waybar/scripts/spotify-metadata.sh",
+    	"return-type": "json",
+        "on-click": "pgrep -x spotify >/dev/null || ~/.config/waybar/scripts/spotify-launch.sh; hyprctl dispatch togglespecialworkspace spotify",
+	"interval": 1,
     },
     "clock": {
         "interval": 60,

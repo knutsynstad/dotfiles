@@ -53,6 +53,12 @@ window#waybar {
     padding: 0 10px;
 }
 
+.custom-spotify {
+  padding: 2px 12px;
+  margin: 0 1px;
+  background-color: black;
+}
+
 /*-----Indicators----*/
 #temperature.critical {
     color: #cc3436;
