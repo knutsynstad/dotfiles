@@ -82,7 +82,7 @@ ttf-jetbrains-mono-nerd inter-font otf-font-awesome
 
 sudo pacman -S --noconfirm --needed \
 firefox discord obs-studio nautilus kitty gimp inkscape \
-scribus steam
+scribus steam blender godot
 
 
 #  ▄▀█ █ █ █▀█   █ █ █▀▀ █   █▀█ █▀▀ █▀█
