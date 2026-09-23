@@ -35,6 +35,9 @@ echo "Installing dotfiles ..."
 # Create symlinks
 ./utils/symlinks.sh
 
+# Apply preferences
+./utils/preferences.sh
+
 # Create any environment variables
 source ./utils/env.sh
 
