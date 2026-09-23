@@ -64,6 +64,13 @@ xdg-desktop-portal-hyprland qt5-wayland qt6-wayland qt5ct qt6ct \
 polkit-kde-agent kvantum xdg-utils xorg-xwayland
 
 
+# █▀▄ ██▀ █ █ ██▀ █   ▄▀▄ █▀▄ █▄ ▄█ ██▀ █▄ █ ▀█▀
+# █▄▀ █▄▄ ▀▄▀ █▄▄ █▄▄ ▀▄▀ █▀  █ ▀ █ █▄▄ █ ▀█  █
+
+sudo pacman -S --noconfirm --needed opencode
+
+
+
 #  ▄▀█ █ █ █▀▄ █ █▀█
 #  █▀█ █▄█ █▄▀ █ █▄█
 
@@ -83,6 +90,10 @@ ttf-jetbrains-mono-nerd inter-font otf-font-awesome
 sudo pacman -S --noconfirm --needed \
 firefox discord obs-studio nautilus kitty gimp inkscape \
 scribus steam blender godot
+
+
+# Dev tools
+sudo pacman -S --noconfirm --needed github-cli
 
 
 #  ▄▀█ █ █ █▀█   █ █ █▀▀ █   █▀█ █▀▀ █▀█
