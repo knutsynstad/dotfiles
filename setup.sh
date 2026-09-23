@@ -38,7 +38,5 @@ echo "Installing dotfiles ..."
 # Apply preferences
 ./utils/preferences.sh
 
-# Create any environment variables
-source ./utils/env.sh
 
 echo "✅ Setup complete. You might want to restart your shell or Hyprland."
