@@ -4,10 +4,27 @@
   "model": "ollama/qwen3.8:27b-mlx",
   "small_model": "ollama/qwen3.5:9b-mlx",
 
+  "autoupdate": true,
+
   "providers": {
     "ollama": {
       "settings": {
-        "baseURL": "http://bandit.funz.lol:11434/v1"
+        "baseURL": "http://bandit.funz.lol:11434/v1",
+        "maxConcurrency": 1
+      },
+      "models": {
+        "qwen3.8:27b-mlx": {
+          "limit": {
+            "context": 131072,
+            "output": 32768
+          }
+        },
+        "qwen3.5:9b-mlx": {
+          "limit": {
+            "context": 131072,
+            "output": 32768
+          }
+        }
       }
     }
   }
