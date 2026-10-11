@@ -1,6 +1,6 @@
 local mod = 'SUPER'
 local exec = hl.dsp.exec_cmd
-hl.bind(mod .. ' + Return', exec('kitty'))
+hl.bind(mod .. ' + Return', exec('kitty --start-as minimized'))
 hl.bind(mod .. ' + B', exec('firefox'))
 hl.bind(mod .. ' + Q', hl.dsp.window.close())
 hl.bind(mod .. ' + M', hl.dsp.exit())
